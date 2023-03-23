@@ -3,7 +3,7 @@ import Main from "./components/Main";
 
 function App() {
   return (
-    <div className="App">
+    <div className="h-screen w-screen">
       <Routes>
         <Route path="/login" element={<Main />} />
       </Routes>
