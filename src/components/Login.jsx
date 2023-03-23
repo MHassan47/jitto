@@ -4,7 +4,7 @@ function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center w-5/6 ">
       <div className="flex-col justify-start w-1/3 mb-8">
         <div className="text-3xl font-bold">Welcome back</div>
         <div className="text-gray-500">Sign in to your account</div>
@@ -36,7 +36,7 @@ function Login() {
       <div className="flex justify-end w-1/3 mb-2">
         <a
           className="text-purple-500 hover:text-purple-700 cursor-pointer"
-          href="#"
+          href="/login"
         >
           Forgot your password?
         </a>
