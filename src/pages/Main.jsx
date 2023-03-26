@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Detail from "./Detail";
-import Header from "./Header";
-import Login from "./Login";
+import Detail from "../components/Detail";
+import Header from "../components/Header";
+import Login from "../components/Login";
 
 function Main() {
   const [mode, setMode] = useState("Login");
@@ -10,7 +10,7 @@ function Main() {
       <div className="h-1/6">
         <Header setMode={setMode} mode={mode} />
       </div>
-      <div className="flex justify-center items-center h-5/6">
+      <div className="flex justify-center items-start mt-28 h-5/6">
         {mode === "Login" && <Login />}
         {mode === "Detail" && <Detail />}
       </div>
